@@ -4,6 +4,7 @@ import glob
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from src import config 
+import pickle
 
 def create_dataset_structure():
     """
@@ -128,3 +129,16 @@ def plot_results(history):
     save_path = os.path.join(config.OUTPUT_DIR, 'training_plot.png')
     plt.savefig(save_path)
     print(f"Plots saved in: {save_path}")
+
+
+def save_history(history, filename):
+    """
+    Save the training history to a file using pickle
+    """
+    # Ensure the output directory exists
+    os.makedirs(config.OUTPUT_DIR, exist_ok=True)
+    
+    filepath = os.path.join(config.OUTPUT_DIR, filename)
+    with open(filepath, 'wb') as f:
+        pickle.dump(history, f)
+    print(f"📄 History salvata in: {filepath}")

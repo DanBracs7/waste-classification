@@ -12,6 +12,9 @@ else:
 
 PROCESSED_DATA_DIR = os.path.join(OUTPUT_DIR, 'processed_data')
 
+MODEL_NAME = 'resnet18_finetuned_pre_trained'
+
+
 # --- IPERPARAMETRI (STATISTICI, TOCCATE QUI!) ---
 BATCH_SIZE = 32
 NUM_EPOCHS = 10

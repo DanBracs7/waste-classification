@@ -2,16 +2,16 @@
 
 A Deep Learning project to classify waste items into **9 categories** to assist in automatic recycling processes. This project utilizes a **ResNet18** neural network pre-trained on ImageNet and fine-tuned on a waste dataset. This project was made for an university exam of Computer Science - Fundamentals of Data Science
 
-## 📌 Project Overview
+##  Project Overview
 - **Goal**: Classify images of waste (Plastic, Glass, Paper, etc.) to automate sorting.
 - **Model**: ResNet18 (Transfer Learning).
 - **Dataset**: [Waste Classification Data](https://www.kaggle.com/datasets/adithyachalla/waste-classification) (25k+ images).
 - **Framework**: PyTorch.
 
 ## 👥 Team Members & Roles
-* **[Tuo Nome]** (Lead Engineer): Pipeline architecture, Model implementation, Code structure.
-* **[Nome Collega A]** (Data Scientist): Hyperparameter tuning, Ablation studies, Experimental design.
-* **[Nome Collega B]** (Data Analyst): Real-world testing, Error analysis, Business logic mapping.
+* **Daniele Bracoloni** (Lead Engineer): Pipeline architecture, Model implementation, Code structure.
+* **n** (Data Scientist): Hyperparameter tuning, Ablation studies, Experimental design.
+* **n** (Data Analyst): Real-world testing, Error analysis, Business logic mapping.
 
 ---
 
@@ -68,7 +68,7 @@ This script will:
 
 
 
-Configuration (For Statisticians)
+Configuration 
 
 You don't need to change the code logic! To change Hyperparameters (Batch size, Learning Rate, Epochs), open and edit:
 # Example inside src/config.py

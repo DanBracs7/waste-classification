@@ -5,7 +5,7 @@ import os
 from src import config, utils, data_setup, model_setup, train_model
 
 def main():
-    print(f"🚀 Starting project on {config.DEVICE}")
+    print(f"Starting project on {config.DEVICE}")
     
     # 1. Prepare data (Split folders)
     utils.create_dataset_structure()
@@ -35,11 +35,30 @@ def main():
     utils.plot_results(history)
     
     # Save model
-    save_path = os.path.join(config.OUTPUT_DIR, "final_model.pth")
+    
+    save_path = os.path.join(config.OUTPUT_DIR, f"{config.MODEL_NAME}.pth")
     torch.save(model.state_dict(), save_path)
     
     print(f"Done! Model saved to {save_path}")
     print("Check the 'outputs' folder for graphs and the .pth file.")
+    
+
+    os.makedirs(config.OUTPUT_DIR, exist_ok=True)
+    
+    # saving the model and history with specific names
+    model_filename = f"model_{config.MODEL_NAME}.pth"
+    history_filename = f"history_{config.MODEL_NAME}.pkl"
+    
+    # Save the model
+    save_path = os.path.join(config.OUTPUT_DIR, model_filename)
+    torch.save(model.state_dict(), save_path)
+    print(f" Model saved: {save_path}")
+
+    # Save the history (
+    utils.save_history(history, history_filename)
+    
+    # Plot and save training results
+    utils.plot_results(history)
 
 if __name__ == '__main__':
     main()
