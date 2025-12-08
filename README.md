@@ -4,7 +4,7 @@ A Deep Learning project to classify waste items into **9 categories** to assist 
 
 ##  Project Overview
 - **Goal**: Classify images of waste (Plastic, Glass, Paper, etc.) to automate sorting.
-- **Model**: ResNet18 (Transfer Learning).
+- **Model**: ResNet18 (Transfer Learning), RestNet18 Custom and VGG_Style model.
 - **Dataset**: [Waste Classification Data](https://www.kaggle.com/datasets/adithyachalla/waste-classification) (25k+ images).
 - **Framework**: PyTorch.
 
