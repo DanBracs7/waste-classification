@@ -1,9 +1,9 @@
 torch
 torchvision
 matplotlib
+tqdm
+opencv-python
 scikit-learn
 pandas
-numpy
-tqdm
-jupyter
-pickle
+seaborn
+ipywidgets
