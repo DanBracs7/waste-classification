@@ -6,6 +6,7 @@ from sklearn.model_selection import train_test_split
 from src import config 
 import pickle
 
+
 def create_dataset_structure():
     """
     Reads raw data and creates Train/Val/Test structure
@@ -39,7 +40,7 @@ def create_dataset_structure():
     print(f"Classes Found: {classes}")
 
     if not classes:
-        print("ERROR: No classes found! Check config.DATA_ROOT path.")
+        print("ERROR: No classes found! Check DATA_ROOT path.")
         return
 
     # 3. Perform the split
@@ -77,8 +78,8 @@ def create_dataset_structure():
         total_images_count += len(files)
 
         # Split 70% Train - 15% Val - 15% Test
-        train_files, temp = train_test_split(files, test_size=0.3, random_state=config.SEED)
-        val_files, test_files = train_test_split(temp, test_size=0.5, random_state=config.SEED)
+        train_files, temp = train_test_split(files, test_size=0.3, random_state=SEED)
+        val_files, test_files = train_test_split(temp, test_size=0.5, random_state=SEED)
 
         # Physical copy
         splits = {'train': train_files, 'val': val_files, 'test': test_files}
@@ -141,4 +142,4 @@ def save_history(history, filename):
     filepath = os.path.join(config.OUTPUT_DIR, filename)
     with open(filepath, 'wb') as f:
         pickle.dump(history, f)
-    print(f"📄 History salvata in: {filepath}")
+    print(f"History salvata in: {filepath}")
