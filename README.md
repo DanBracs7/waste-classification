@@ -176,3 +176,5 @@ python main.py
 ```
 
   * **Output:** Generates a CSV file with predictions and an External Confusion Matrix (Orange).
+
+If you don't feel confident using python files, i created a python notebook, that has the some functions and the same structure as the python files. (Notify that i used it to work with other co workers and some comments may be in italian to make the work easier)
