@@ -11,7 +11,7 @@ outputs/
 *.pth
 *.png
 *.jpg
-
+*.jpeg
 # --- PYTHON & SYSTEM ---
 # Ignora i file di cache e configurazioni locali
 __pycache__/
