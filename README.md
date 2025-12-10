@@ -8,7 +8,7 @@ This project was developed for a university exam: **Computer Science - Fundament
 
   - **Goal**: Classify images of waste (Plastic, Glass, Paper, etc.) to automate sorting.
   - **Models**: ResNet18 (Transfer Learning), Custom ResNet18, and VGG-Style model.
-  - **Dataset**: [Waste Classification Data](https://www.kaggle.com/datasets/adithyachalla/waste-classification) (25k+ images).
+  - **Dataset**: [Waste Classification Data](https://www.kaggle.com/datasets/adithyachalla/waste-classification) (4k+ images).
   - **Framework**: PyTorch.
 
 ## 👥 Team Members & Roles
